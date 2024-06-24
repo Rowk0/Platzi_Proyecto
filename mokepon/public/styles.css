@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+body {
+    font-family: "Tiny5", sans-serif;
+    background-color: #CDE8E5;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    color: #7AB2B2;
+    font-size: 60px;
+}
+
+.subtitulo {
+    color: #7AB2B2;
+    font-size: 40px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 180px;
+    height: 100px;
+    background-color: #4D869C;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    color: #7AB2B2;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #7AB2B2;
+    color: #7AB2B2;
+    font-family: "Tiny5", sans-serif;
+    margin-top: 30px;
+}
+
+input {
+    display: none;  
+}
+
+input:checked + label {
+    background: #EEF7FF;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #4D869C;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: transparent;
+    width: 80px;
+    color: #7AB2B2;
+    font-family: "Tiny5", sans-serif;
+}
+
+#mensajes {
+    padding: 20px;
+    margin-top: 20px;
+    background: #EEF7FF;
+    border-radius: 20px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    background: transparent;
+    border: transparent;
+    color: #7AB2B2;
+    font-family: "Tiny5", sans-serif;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #7AB2B2;
+    color: #7AB2B2;
+    font-family: "Tiny5", sans-serif;
+    margin: 10px 0;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 300px) {
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
